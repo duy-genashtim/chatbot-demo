@@ -60,6 +60,13 @@ export function SessionsBrowser({ idToken, filters, onFiltersChange }: Props) {
     [idToken],
   );
 
+  // Auto-fetch lần đầu khi idToken đã sẵn sàng để admin thấy dữ liệu ngay
+  // mà không cần bấm "Tìm kiếm".
+  useEffect(() => {
+    if (!idToken || searched) return;
+    fetchData(filters, 0);
+  }, [idToken, searched, fetchData, filters]);
+
   function handleSearch(e: React.FormEvent) {
     e.preventDefault();
     setPage(0);

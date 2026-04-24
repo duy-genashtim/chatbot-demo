@@ -19,6 +19,7 @@ const NAV_LINKS = [
   { href: "/admin/settings", label: "Cài đặt" },
   { href: "/admin/admins", label: "Quản trị viên" },
   { href: "/admin/history", label: "Lịch sử" },
+  { href: "/chat", label: "Chat nội bộ" },
 ];
 
 export default async function AdminLayout({
