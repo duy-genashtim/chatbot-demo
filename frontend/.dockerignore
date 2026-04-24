@@ -1,0 +1,32 @@
+# Secrets — never bake into image
+.env.local
+.env*.local
+.env
+.env.*
+!.env.example
+
+# Build output (rebuilt in image)
+.next/
+out/
+
+# Dependencies (reinstalled in image)
+node_modules/
+
+# Test artifacts
+tests/e2e/
+playwright-report/
+test-results/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log

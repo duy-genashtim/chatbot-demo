@@ -1,0 +1,49 @@
+# Secrets — never bake into image
+.env
+.env.*
+!.env.example
+
+# Test artifacts
+tests/
+.pytest_cache/
+pytest.ini
+coverage.xml
+.coverage
+htmlcov/
+
+# Python runtime artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.Python
+
+# Virtual environment
+.venv/
+venv/
+env/
+dist/
+build/
+
+# Local databases (mounted as volumes in prod)
+*.db
+*.sqlite
+*.sqlite3
+data/
+
+# Runtime dirs mounted as volumes
+uploads/
+chroma_data/
+logs/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore

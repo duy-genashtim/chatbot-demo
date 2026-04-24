@@ -1,0 +1,48 @@
+# Local-only artefacts — không commit lên git
+
+# Triển khai và hạ tầng
+deploy/
+docker-compose.yml
+docker-compose.prod.yml
+
+# Tài liệu, kế hoạch, báo cáo nội bộ
+doc/
+plans/
+
+# Env và secrets
+backend/.env
+frontend/.env
+frontend/.env.local
+*.env.local
+
+# Python
+backend/.venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.pyc
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/playwright-report/
+frontend/test-results/
+frontend/tsconfig.tsbuildinfo
+
+# Dữ liệu runtime
+backend/data/
+backend/logs/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# So sánh tạm
+compare-d4.md
+SETUP.md

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand design tokens — consumed by both Tailwind classes and raw var() usage */
+  --brand-primary: #253956;
+  --brand-foreground: #ffffff;
+  --brand-hover: #1b2a40;
+  --brand-subtle: #eef1f6;
+
+  /* Base page defaults */
+  --background: #ffffff;
+  --foreground: #111827;
+}
